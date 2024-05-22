@@ -4,7 +4,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram_login import TelegramLogin
 
 # Replace with your bot's API token
-API_TOKEN = 'YOUR_API_TOKEN'
+API_TOKEN = '7087096200:AAHT5vlpiBFjwQVredRNFeYVV0DYOOduCCo'
 
 # Replace with your GitHub repository URL
 GITHUB_REPO_URL = 'https://github.com/ShashwatMishra0099/Members.run.git'
@@ -41,7 +41,7 @@ def add_members(update, context):
     
     # Use the logged-in user's credentials to add members to the group
     bot = telegram.Bot(token=API_TOKEN)
-    group_id = 'YOUR_GROUP_ID'
+    group_id = '-4238096135'
     for member in members:
         bot.add_chat_member(group_id, member)
 
